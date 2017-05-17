@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/assets/css/foundation.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <script src="/assets/js/app.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQRP-JOgHWIl8EjvfENLvYuhfwccfx6KQ" async defer></script><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <section class="section modal modal_welcome preload">
+      <ul class="parallax">
+        <li class="layer layer__1 preload" data-depth="0.9"></li>
+        <li class="layer layer__2 preload" data-depth="0.5"></li>
+        <li class="layer layer__3 preload" data-depth="0.6"></li>
+        <li class="layer layer__4 preload" data-depth="0.7"></li>
+        <li class="layer layer__5 preload" data-depth="0.5"></li>
+        <li class="layer layer__6 preload" data-depth="0.3"></li>
+        <li class="layer layer__7 preload" data-depth="0.25"></li>
+        <li class="layer layer__8 preload" data-depth="0.1"></li>
+        <li class="layer layer__9 preload" data-depth="0.1"></li>
+        <li class="layer layer__10 preload" data-depth="0"></li>
+      </ul>
+      <div class="modal__header modal__header_welcome">
+        <div class="welcome__button">
+          <div class="button">
+            <button class="button__link button__link_flipper">Авторизоваться</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal__center modal__center_welcome">
+        <div class="welcome">
+          <div class="flipper">
+            <div class="flipper__side flipper__side_front flipper__side_active">
+              <div class="user parallax-scroll parallax-scroll_3 user_welcome">
+                <div class="user__info user__info_welcome">
+                  <div class="user__photo user__photo_welcome"><img class="user__photo-img" src="/assets/img/user.jpg" alt="">
+                  </div>
+                  <div class="user__title user__title_welcome">
+                    <div class="text text_fz-28 text_fw-medium text_ta-center">Кирилл Вишенков</div>
+                  </div>
+                  <div class="user__subtitle user__subtitle_welcome">
+                    <div class="text text_fw-lighter text_ta-center text_opacity-80">Личный сайт веб-разработчика</div>
+                  </div>
+                  <div class="welcome__socials">
+                    <ul class="socials">
+                      <li class="socials__item socials__item_welcome"><a class="socials__link socials__link_welcome" href="#">
+                          <svg class="socials__icon socials__icon_welcome">
+                            <use xlink:href="/assets/img/sprite.svg#vk"></use>
+                          </svg></a></li>
+                      <li class="socials__item socials__item_welcome"><a class="socials__link socials__link_welcome" href="#">
+                          <svg class="socials__icon socials__icon_welcome">
+                            <use xlink:href="/assets/img/sprite.svg#github"></use>
+                          </svg></a></li>
+                      <li class="socials__item socials__item_welcome"><a class="socials__link socials__link_welcome" href="#">
+                          <svg class="socials__icon socials__icon_welcome">
+                            <use xlink:href="/assets/img/sprite.svg#in"></use>
+                          </svg></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="welcome__menu">
+                  <nav class="menu menu_welcome">
+                    <ul class="menu__list menu__list_welcome">
+                      <li class="menu__item menu__item_welcome"><a class="menu__link menu__link_welcome" href="works.html"><span class="menu__text menu__text_welcome">Мои работы</span></a>
+                      </li>
+                      <li class="menu__item menu__item_welcome"><a class="menu__link menu__link_welcome" href="about.html"><span class="menu__text menu__text_welcome">Обо мне</span></a>
+                      </li>
+                      <li class="menu__item menu__item_welcome"><a class="menu__link menu__link_welcome" href="blog.html"><span class="menu__text menu__text_welcome">Блог</span></a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="flipper__side flipper__side_back">
+              <div class="user">
+                <div class="user__info_welcome welcome__login">
+                  <div class="welcome__title">
+                    <div class="title">
+                      <h2 class="title__text title__text_sub">Авторизуйтесь</h2>
+                    </div>
+                  </div>
+                  <div class="welcome__content">
+                    <form class="form form_login">
+                      <div class="form__data">
+                        <div class="form__section form__section_row form__section_row-input">
+                          <div class="form__icon-container">
+                            <svg class="form__icon">
+                              <use xlink:href="/assets/img/sprite.svg#login"></use>
+                            </svg>
+                          </div>
+                          <input class="form__input" type="text" name="login" placeholder="Логин">
+                        </div>
+                        <div class="form__section form__section_row form__section_row-input">
+                          <div class="form__icon-container">
+                            <svg class="form__icon">
+                              <use xlink:href="/assets/img/sprite.svg#password"></use>
+                            </svg>
+                          </div>
+                          <input class="form__input" type="password" name="password" placeholder="Пароль">
+                        </div>
+                        <div class="form__section">
+                          <input class="form__input_checkbox" type="checkbox" name="human" id="human">
+                          <label class="text form__label form__label_checkbox" for="human">Я человек</label>
+                        </div>
+                        <div class="form__section form__section_pad-10 text text_fw-bold text_ta-center">Вы точно не робот?</div>
+                        <div class="form__section form__section_row">
+                          <input class="form__input_radio" type="radio" name="capthca" value="yes" id="captcha_yes">
+                          <label class="form__label form__label_radio text" for="captcha_yes">Да</label>
+                          <input class="form__input_radio" type="radio" name="capthca" value="no" id="captcha_no">
+                          <label class="form__label form__label_radio text" for="captcha_no">Не уверен</label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="form__buttons">
+                  <input class="form__button form__button_flip" type="button" value="На главную">
+                  <input class="form__button form__button_submit" type="submit" name="submit" value="Войти" form="form">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal__footer modal__footer_welcome">
+        <footer class="footer footer_index text text_color-white text_opacity-50 text_fw-lighter">© Кирилл Вишенков | создано с любовью в LoftSchool | 2017</footer>
+      </div>
+    </section>
+  </body>
+</html>
